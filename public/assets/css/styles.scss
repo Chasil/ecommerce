@@ -1,3 +1,62 @@
-body {
-  color: red;
+.content {
+  width: 100%;
+
+  .header {
+    ul {
+      display: flex;
+      justify-content: center;
+
+      li {
+        padding: 0 10px;
+      }
+    }
+  }
+
+  .content-wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+
+    .product {
+      display: flex;
+      border: 1.5px solid lightgray;
+      position: relative;
+
+      &:hover {
+        .buttons {
+          display: flex;
+          background: rgba(255, 255, 255, 0.5);
+        }
+      }
+
+      .image {
+        width: 300px;
+      }
+
+      .texts {
+        padding: 0 15px;
+        width: 500px;
+
+        .title {
+          font-weight: bold;
+        }
+
+        .description {
+          font-size: 12px;
+        }
+      }
+
+      .numbers {
+        padding: 0 15px;
+      }
+
+      .buttons {
+        position: absolute;
+        display: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
 }

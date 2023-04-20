@@ -1,5 +1,49 @@
-body {
-  color: red;
+.content {
+  width: 100%;
+}
+.content .header ul {
+  display: flex;
+  justify-content: center;
+}
+.content .header ul li {
+  padding: 0 10px;
+}
+.content .content-wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.content .content-wrapper .product {
+  display: flex;
+  border: 1.5px solid lightgray;
+  position: relative;
+}
+.content .content-wrapper .product:hover .buttons {
+  display: flex;
+  background: rgba(255, 255, 255, 0.5);
+}
+.content .content-wrapper .product .image {
+  width: 300px;
+}
+.content .content-wrapper .product .texts {
+  padding: 0 15px;
+  width: 500px;
+}
+.content .content-wrapper .product .texts .title {
+  font-weight: bold;
+}
+.content .content-wrapper .product .texts .description {
+  font-size: 12px;
+}
+.content .content-wrapper .product .numbers {
+  padding: 0 15px;
+}
+.content .content-wrapper .product .buttons {
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*# sourceMappingURL=styles.css.map */

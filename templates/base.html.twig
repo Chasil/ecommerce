@@ -25,6 +25,11 @@
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <div class="content">
+            {% include ('header/header.html.twig') %}
+            {% include ('header/banner.html.twig') %}
+            {% block content %}{% endblock %}
+            {% include ('footer/footer.html.twig') %}
+        </div>
     </body>
 </html>
