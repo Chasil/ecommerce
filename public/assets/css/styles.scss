@@ -59,4 +59,28 @@
       }
     }
   }
+
+  .product-wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+
+    .row {
+      display: flex;
+
+      .image {
+        width: 600px;
+      }
+
+      .info {
+        .title {
+          font-weight: bold;
+        }
+
+        .description {
+
+        }
+      }
+    }
+  }
 }

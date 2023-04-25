@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+    <div class="product-wrapper">
+        <div class="row">
+            <div class="image"><img src="{{ product.image }}"></div>
+            <div class="info">
+                <div class="title">{{ product.title }}</div>
+                <div class="description">{{ product.description }}</div>
+                <div class="price">{{ product.price }}</div>
+                <div class="buttons">
+                    <div class="amount">{{ product.amount }}</div>
+                    <div class="add-to-cart"><a href="#">Add to cart</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

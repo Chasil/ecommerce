@@ -45,5 +45,19 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.content .product-wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.content .product-wrapper .row {
+  display: flex;
+}
+.content .product-wrapper .row .image {
+  width: 600px;
+}
+.content .product-wrapper .row .info .title {
+  font-weight: bold;
+}
 
 /*# sourceMappingURL=styles.css.map */
